@@ -55,6 +55,7 @@ public class Homework {
         pageLogin.cityHim("Гей");
         Thread.sleep(2000);
         pageLogin.button();
+        System.out.println("апдзцудп");
     }
     @AfterEach
     void tearDown() {
