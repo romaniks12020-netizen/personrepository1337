@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a2e69e5-71b4-448b-9922-3f79578fe925" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8a2e69e5-71b4-448b-9922-3f79578fe925" name="Changes" comment="2312312312" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,12 +31,22 @@
     &quot;assignee&quot;: &quot;romaniks12020-netizen&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/romaniks12020-netizen/personrepository1337.git&quot;,
-    &quot;accountId&quot;: &quot;390709fa-d1fc-4404-bd9c-910f5edd8604&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/romaniks12020-netizen/personrepository1337.git",
+    "accountId": "390709fa-d1fc-4404-bd9c-910f5edd8604"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "romaniks12020-netizen",
+    "repository": "personrepository1337"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -56,7 +64,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "dev2",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/roman/IdeaProjects/Iphone/src/main/java/org/example/Main.java",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -169,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771841688577</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2312312312">
+      <option name="closed" value="true" />
+      <created>1771842682707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1771842682707</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
