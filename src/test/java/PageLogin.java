@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.io.File;
+import java.util.Date;
 
 public class PageLogin {
     By textboxLogin = By.xpath("//input [@placeholder='Имя']");
@@ -10,8 +11,8 @@ public class PageLogin {
     By textboxLogin2 = By.xpath("//input [@placeholder='name@example.com']");
     By gender = By.xpath("//*[@id=\"gender-male\"]");
     By phone = By.xpath("//input[@id='mobile']");
-    By date = By.xpath("//*[@id=\"dateOfBirth\"]");
-    By date1 = By.xpath("//*[@id=\"radix-_r_h_\"]/div/div[3]/button[10]");
+    By date = By.xpath("//button[@type='button' and contains(@class, 'inline-flex') and contains(@class, 'justify-start')]");
+    By date1 = By.xpath("//button[not(contains(@class, 'opacity-50')) and not(@disabled) and normalize-space()!='']");
     By hobbie = By.xpath("//*[@id=\"hobby-sports\"]");
     /*By picture = By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/main/div[2]/div/div/div[2]/form/div[7]/div/div/button");*/
     By textboxLogin3 = By.xpath("//*[@id=\"currentAddress\"]");
@@ -42,13 +43,13 @@ public class PageLogin {
         WebElement driver = webDriver.findElement(phone);
         driver.sendKeys(text2);
     }
-    public void dateHim (){
+    public void dateButtonChoice (){
         WebElement driver = webDriver.findElement(date);
         driver.click();
     }
-    public void dateHim1 () {
+    public void dateChoice (Date date) {
         WebElement driver = webDriver.findElement(date1);
-        driver.click();
+        driver.sendKeys(date.toString());
     }
     public void hobbieHim(){
         WebElement driver = webDriver.findElement(hobbie);

@@ -1,3 +1,5 @@
+import com.github.javafaker.Faker;
+import groovyjarjarantlr4.v4.codegen.model.ThrowEarlyExitException;
 import net.bytebuddy.implementation.bytecode.Throw;
 import org.jspecify.annotations.Nullable;
 import org.junit.jupiter.api.AfterEach;
@@ -29,24 +31,21 @@ public class Homework {
     @Test
 
     void loginTest() throws InterruptedException {
+        Faker faker = new Faker();
 
-        pageLogin.field("Олег");
-        Thread.sleep(1500);
-        pageLogin.field1("Геев");
-        Thread.sleep(1500);
-        pageLogin.field2("gay@gmail.com");
-        Thread.sleep(1500);
+        pageLogin.field(faker.name().firstName());
+        pageLogin.field1(faker.name().lastName());
+        pageLogin.field2(faker.internet().emailAddress());
         pageLogin.gender();
-        Thread.sleep(1000);
-        pageLogin.phoneNum("79027070105");
-        Thread.sleep(1500);
-        pageLogin.dateHim();
-        Thread.sleep(1000);
-        pageLogin.dateHim1();
-        Thread.sleep(2000);
+        pageLogin.phoneNum(faker.phoneNumber().phoneNumber());
+        pageLogin.dateButtonChoice();
+        Thread.sleep(2222);
+        pageLogin.dateChoice(faker.date().birthday());
+        Thread.sleep(5555);
+
         pageLogin.hobbieHim();
         Thread.sleep(1000);
-        /*pageLogin.pictureHim();*/
+        //pageLogin.pictureHim();
         Thread.sleep(1000);
         pageLogin.field3("Улица ебаната тупого д.3");
         Thread.sleep(1500);
